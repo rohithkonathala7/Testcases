@@ -1,0 +1,14 @@
+testbed:
+    name: IOS_Testbed
+devices:
+    Whatever:
+        os: nxos
+        type: nxos
+        connections:
+            a:
+                protocol: ssh
+                ip: 131.226.217.151
+        credentials:
+            default:
+                username: admin
+                password: Admin_1234!

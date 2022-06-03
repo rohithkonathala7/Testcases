@@ -1,0 +1,20 @@
+extends: '%CALLABLE{genie.libs.sdk.genie_yamls.datafile(trigger,nxos)}'
+TriggerGetConfig:
+    source:
+        pkg: testing
+        class: ShowRunningConfig
+    devices:
+        - Whatever
+TriggerGetVrf:
+    source:
+        pkg: testing
+        class: ShowVrf
+    devices:
+        - Whatever
+TriggerGetVlan:
+    source:
+        pkg: testing
+        class: ShowVlan
+    devices:
+        - Whatever
+
