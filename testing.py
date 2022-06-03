@@ -111,7 +111,7 @@ class ShowVlan(aetest.Testcase):
     cli_command = ['show vlan', 'show vlan id {vlan}']
         
     @aetest.test
-    def test(self, testbed, vlan='', output=None):
+    def cli(self, testbed, vlan='', output=None):
         device = testbed.devices["Whatever"]
         if output is None:
             if vlan:
