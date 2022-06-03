@@ -66,7 +66,6 @@ class ShowRunningConfig(aetest.Testcase):
 class ShowVrf(aetest.Testcase):
 
     cli_command = ['show vrf', 'show vrf {vrf}']
-    @aetest.test
     def cli(self, testbed, vrf='', output=None):
         device = testbed.devices["Whatever"]
         if output is None:
@@ -109,8 +108,6 @@ class ShowVrf(aetest.Testcase):
 class ShowVlan(aetest.Testcase):
 
     cli_command = ['show vlan', 'show vlan id {vlan}']
-        
-    @aetest.test
     def cli(self, testbed, vlan='', output=None):
         device = testbed.devices["Whatever"]
         if output is None:
