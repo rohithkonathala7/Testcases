@@ -109,9 +109,6 @@ class ShowVrf(aetest.Testcase):
 class ShowVlan(aetest.Testcase):
 
     cli_command = ['show vlan', 'show vlan id {vlan}']
-    @aetest.setup
-    def setup(self):
-        pass
         
     @aetest.test
     def test(self, testbed, vlan='', output=None):
@@ -145,10 +142,6 @@ class ShowVlan(aetest.Testcase):
                     str(m.groupdict()['Ports'])
                 continue
         logger.info(vlan_dict)
-        
-    @aetest.cleanup
-    def cleanup(self):
-        pass
 
 class CommonCleanup(aetest.CommonCleanup):
     '''CommonCleanup Section
